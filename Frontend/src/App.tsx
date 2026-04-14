@@ -1,6 +1,7 @@
 import  { useState } from 'react';
 import Navbar from './assets/Components/NavBar';
 import Home from './pages/home';
+import Footer from './assets/Components/Footer';
 
 export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,6 +20,7 @@ export default function App() {
       <main className={isMobileMenuOpen ? 'hidden' : 'block'}>
         <Home />
       </main>
+      <Footer />
     </div>
   );
 }
