@@ -3,10 +3,10 @@ import type { Dispatch, SetStateAction } from 'react';
 import Logo from '../img/logo.png'; 
 import fineedgeL from '../img/finedgeLogo.png';
 import kuleanpayL from '../img/kuleanPayLogo.jpg';
-import smerpL from '../img/smerpLogo.jpeg';
-import bulkwaveL from '../img/bulkWaveLogo1.jpg';
-import ucpL from '../img/ucpLogo.jpeg';
-import beetvasL from '../img/beetLogo.jpeg';
+import smerpL from '../img/smerpLogo.png';
+import bulkwaveL from '../img/bulkWaveLogo1.png';
+import ucpL from '../img/ucpLogo.png';
+import beetvasL from '../img/beetLogo.png';
 import smerpgoL from '../img/smerpGoLogo.png';
 
 import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
