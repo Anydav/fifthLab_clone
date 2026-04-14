@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import type { Dispatch, SetStateAction } from 'react';
-import Logo from '../img/logo.png'; 
+import Logo from '../img/Logo.png'; 
 import fineedgeL from '../img/finedgeLogo.png';
 import kuleanpayL from '../img/kuleanPayLogo.jpg';
-import smerpL from '../img/smerpLogo.png';
+import smerpL from '../img/smerpGoLogo.png';
 import bulkwaveL from '../img/bulkWaveLogo1.png';
 import ucpL from '../img/ucpLogo.png';
 import beetvasL from '../img/beetLogo.png';
