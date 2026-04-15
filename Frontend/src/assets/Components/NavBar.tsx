@@ -39,7 +39,6 @@ const Navbar: React.FC<NavbarProps> = ({ isMobileMenuOpen, setIsMobileMenuOpen }
       <nav className="bg-white border-b border-gray-200 sticky top-0 z-[999]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-20 relative">
-
             {/* Mobile Hamburger */}
             <button
               onClick={() => setIsMobileMenuOpen(true)}
@@ -47,28 +46,22 @@ const Navbar: React.FC<NavbarProps> = ({ isMobileMenuOpen, setIsMobileMenuOpen }
             >
               <Menu className="w-7 h-7" />
             </button>
-
             {/* Desktop Left Links */}
             <div className="hidden md:flex items-center gap-x-8 text-gray-600 font-normal">
               <a href="/" className="py-2 hover:text-black transition-colors">Home</a>
               <a href="/about" className="py-2 hover:text-black transition-colors">About Us</a>
-
               {/* Solutions Dropdown */}
               <div className="relative group">
                 <div className="flex items-center gap-x-1 cursor-pointer py-2 group-hover:text-black transition-colors">
                   Solutions
                   <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
                 </div>
-
                 {/* Compact Dropdown */}
                 <div className="absolute left-0 top-full mt-3 hidden group-hover:block bg-white shadow-2xl border border-gray-100 rounded-2xl w-[720px] p-5 z-50">
-                  
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-gray-900">Solutions</h3>
                   </div>
-
                   <div className="flex gap-10">
-                    
                     {/* Left Column */}
                     <div className="w-5/12 space-y-5">
                       {allSolutions.slice(0, 4).map((item, i) => (
@@ -93,7 +86,6 @@ const Navbar: React.FC<NavbarProps> = ({ isMobileMenuOpen, setIsMobileMenuOpen }
                         </a>
                       ))}
                     </div>
-
                     {/* Right Column */}
                     <div className="flex-1 space-y-5 pt-1">
                       {allSolutions.slice(4).map((item, i) => (
@@ -122,7 +114,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMobileMenuOpen, setIsMobileMenuOpen }
                 </div>
               </div>
 
-              <a href="/insights" className="py-2 hover:text-black transition-colors">Insights</a>
+            <a href="/insights" className="py-2 hover:text-black transition-colors">Insights</a>
             </div>
 
             {/* Center Logo + Name */}
@@ -133,7 +125,6 @@ const Navbar: React.FC<NavbarProps> = ({ isMobileMenuOpen, setIsMobileMenuOpen }
                 <span className="font-light text-2xl tracking-tight text-black">lab</span>
               </a>
             </div>
-
             {/* Desktop Get in Touch Button */}
             <div className="hidden md:block">
               <a
@@ -150,7 +141,6 @@ const Navbar: React.FC<NavbarProps> = ({ isMobileMenuOpen, setIsMobileMenuOpen }
           </div>
         </div>
       </nav>
-
       {/* Mobile Menu - Updated with real images too */}
       <div
         className={`fixed inset-0 z-110 transition-all duration-300 ${
@@ -185,7 +175,6 @@ const Navbar: React.FC<NavbarProps> = ({ isMobileMenuOpen, setIsMobileMenuOpen }
               <a href="/about" className="block py-4 px-4 rounded-xl hover:bg-slate-100" onClick={() => setIsMobileMenuOpen(false)}>
                 About Us
               </a>
-
               <div>
                 <button
                   onClick={() => setIsMobileSolutionsOpen(!isMobileSolutionsOpen)}
